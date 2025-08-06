@@ -1,19 +1,24 @@
 1 let titulo = document.querySelector('h1);
 titulo.innerHTML = "hora del desafio"
 2
-function testclick(){
+<button onclick="mostarMensajeEnLaConsola()" class="button">Console</button>
+function mostarMensajeEnLaConsola(){
 console.log("el boton fue cliqueadi");
 3
-function testprompt(){
+<button onclick="mostrarAlerta()" class="button">Alert</button>
+function mostrarAlerta(){
 let ciudad = prompt('en que cuidad de brasil estuviste ?');
-aler('estuve en ${ciudad} y me acorde de ti');
+alert('estuve en  ${ciudad} y me acorde de ti');
 }
 4 
-function testalert (){
+<button onclick="mostarAlerta()" class="button">Alert</button>
+function mostarAlerta(){
 alert("yo amo JS");
-]
-5 function testSuma() {
+}
+5
+ <button onclick="sumaDosNumeros()" class="button">Suma</button>
+ function sumaDosNumeros() {
   let numero1 = parseInt(prompt("Dime un primer número"));
   let numero2 = parseInt(prompt("Dime un segundo número"));
-  let suma = numero1 + numero2;
-  alert(`La suma de ${numero1} y ${numero2} es de ${suma}`);
+  let resultado = numero1 + numero2;
+  alert('${numero1} + ${numero2} = ${resultado}')
